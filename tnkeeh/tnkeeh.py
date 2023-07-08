@@ -83,7 +83,7 @@ def _remove_special_chars(text, excluded_chars=[]):
 
 
 def _add_spaces_to_all_special_chars(text):
-    text = re.compile("([^\n\u0621-\u064Aa-zA-Z\u0660-\u0669 ])").sub(r" \1 ", text)
+    text = re.compile("([^\n\u0621-\u064Aa-z0-9A-Z\u0660-\u0669 ])").sub(r" \1 ", text)
     return text
 
 
