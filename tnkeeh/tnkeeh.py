@@ -163,7 +163,7 @@ def _clean_text(text, **kwargs):
         text = _translate(text)
 
     # text = _add_spaces_to_all_special_chars(text)
-    text = _remove_extra_spaces(text)
+    # text = _remove_extra_spaces(text)
     return text 
 
 def _clean_list(list, **kwargs):
