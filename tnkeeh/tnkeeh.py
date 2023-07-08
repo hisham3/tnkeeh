@@ -162,7 +162,7 @@ def _clean_text(text, **kwargs):
     if kwargs['translate'] != None:
         text = _translate(text)
 
-    text = _add_spaces_to_all_special_chars(text)
+    # text = _add_spaces_to_all_special_chars(text)
     text = _remove_extra_spaces(text)
     return text 
 
